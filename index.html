@@ -32,10 +32,17 @@
             // console.log(gender);
            // document.querySelector('#First name-input').value;
            // document.querySelector('#Last name-input').value;
+          //
+          //  var button = document.querySelector('.welcome-screen button');
+          //
+          // button.addEventListener('click', function() {
+          //   alert('Wrong User-Details!');
+          // });
 
            var button = document.querySelector('.welcome-screen button');
             button.addEventListener('click', function() {
-              alert('You clicked me');
+              var name = document.querySelector('#name-input').value;
+              console.log(name)
             });
         </script>
 </body>
