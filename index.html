@@ -20,7 +20,9 @@
               <button > Go </button>
             </div>
         </section>
-      <div class="main hidden"></div>
+      <div class="main hidden">
+        <!-- main page -->
+      </div>
     </div>
        <script src="jquery.js">
        </script>
@@ -42,10 +44,13 @@
           // });
 
           //adding an event listener to a button
-                    
+
           $('.welcome-screen button').on('click', function() {
             var name = $('#name-input').val();
             console.log(name);
+
+            $('.welcome-screen').addClass('hidden');
+              $('.main').removeClass('hidden');
           });
         </script>
 </body>
