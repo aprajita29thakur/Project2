@@ -22,6 +22,8 @@
         </section>
       <div class="main hidden"></div>
     </div>
+       <script src="jquery.js">
+       </script>
 
         <script type="text/javascript">
             // var name;
@@ -39,11 +41,12 @@
           //   alert('Wrong User-Details!');
           // });
 
-           var button = document.querySelector('.welcome-screen button');
-            button.addEventListener('click', function() {
-              var name = document.querySelector('#name-input').value;
-              console.log(name)
-            });
+          //adding an event listener to a button
+                    
+          $('.welcome-screen button').on('click', function() {
+            var name = $('#name-input').val();
+            console.log(name);
+          });
         </script>
 </body>
 </html>
