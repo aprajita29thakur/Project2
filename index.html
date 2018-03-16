@@ -22,6 +22,10 @@
         </section>
       <div class="main hidden">
         <!-- main page -->
+            <header>
+            <div class="right floated user-name"> </div>
+            </header>
+
       </div>
     </div>
        <script src="jquery.js">
@@ -54,7 +58,9 @@
 
 
             var message = "Welcome to spongify" + name;
-            console.log(message);
+            // console.log(message);
+            //showing our welcome message on the screen
+             $('.user-name').text(message);
           });
         </script>
 </body>
