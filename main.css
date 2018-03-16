@@ -41,7 +41,9 @@ h1 {
     color: white;
     background-color: #1f1f1f;
 }
-
+body{
+  background-image: "http://awshdwallpaper.us/wp-content/uploads/2018/01/animated-cute-love-wallpapers-for-mobile-phones-free-download-for-cute-wallpaper-for-mobile-phone-download.jpg";
+}
 .main header {
     height: 80px;
     background-color: #282828;
