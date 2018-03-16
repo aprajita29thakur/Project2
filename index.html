@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    
+
     <title> Song App</title>
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
@@ -14,18 +14,29 @@
             <h1> Welcome to Songify </h1>
             <h3> Enter details to access your account </h3>
             <div class="input-wrapper">
-              <h4>First Name</h4>  <input type="text" placeholder=" Enter First Name" id="First name-input">
-                <h4>Last Name</h4> <input type="text" placeholder=" Enter Last Name" id="Last name-input">
-                <button id="gee"> Go </button>
-
+              <h4>First Name</h4>
+                <input type="text" placeholder="Name" id="name-input" value="aman">
+                <!-- <h4>Last Name</h4> <input type="text" placeholder=" Enter Last Name" id="Last name-input"> -->
+              <button > Go </button>
             </div>
         </section>
-        <div class="main hidden">
-        </div>
+      <div class="main hidden"></div>
     </div>
-    <script type="text/javascript">
-       document.querySelector('#First name-input');
-       document.querySelector('#Last name-input');
-    </script>
+
+        <script type="text/javascript">
+            // var name;
+            // name = document.querySelector('#name-input').value;
+            // console.log(name);
+            //
+            // var gender="male";
+            // console.log(gender);
+           // document.querySelector('#First name-input').value;
+           // document.querySelector('#Last name-input').value;
+
+           var button = document.querySelector('.welcome-screen button');
+            button.addEventListener('click', function() {
+              alert('You clicked me');
+            });
+        </script>
 </body>
 </html>
