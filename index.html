@@ -49,19 +49,40 @@
 
           //adding an event listener to a button
 
-          $('.welcome-screen button').on('click', function() {
+          // $('.welcome-screen button').on('click', function() {
+          //   var name = $('#name-input').val();
+          //   console.log(name);
+          //
+          //   $('.welcome-screen').addClass('hidden');
+          //     $('.main').removeClass('hidden');
+          //
+          //
+          //   var message = "Welcome to spongify" + name;
+          //   // console.log(message);
+          //   //showing our welcome message on the screen
+          //    $('.user-name').text(message);
+          // });
+
+      $('.welcome-screen button').on('click', function()
+        {
             var name = $('#name-input').val();
-            console.log(name);
 
-            $('.welcome-screen').addClass('hidden');
+            if(name.length > 3)
+            {
+              var message = "Welcome, " +  name;
+              $('.main .user-name').text(message);
+              $('.welcome-screen').addClass('hidden');
               $('.main').removeClass('hidden');
-
-
-            var message = "Welcome to spongify" + name;
-            // console.log(message);
-            //showing our welcome message on the screen
-             $('.user-name').text(message);
-          });
+            }
+            else
+            {
+              // var button = document.querySelector('.welcome-screen button');
+               // button.addEventListener('click', function()
+              {
+                alert('Wrong User-Details!');
+              }
+            }
+        });
         </script>
 </body>
 </html>
