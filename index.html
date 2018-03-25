@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title> Song App</title>
-    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="font-awesome.css">
+  
+
+        <link rel="stylesheet" type="text/css" href="font-awesome.css">
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
@@ -16,7 +17,7 @@
             <h3> Enter details to access your account </h3>
             <div class="input-wrapper">
               <h4>First Name</h4>
-                <input type="text" placeholder="Name" id="name-input" value="aman">
+                <input type="text" placeholder="Enter First Name" id="name-input" value="aman">
                  <h4>Last Name</h4>
                  <input type="text" placeholder=" Enter Last Name" id="Last name-input"> <p>
               <button > Submit </button></p>
@@ -36,7 +37,7 @@
         </section>
      -->
         <section class="content" >
-          <!-- <audio src="C:\Users\aHP\Desktop\Project2\02 - Yaariyan - Baarish.mp3" controls=" ">
+        <!-- <audio src="C:\Users\aHP\Desktop\Project2\02 - Yaariyan - Baarish.mp3" controls=" ">
           </audio> -->
           <div class="song-list">
                   <div class="list-headers">
@@ -110,7 +111,7 @@
 
       $('.welcome-screen button').on('click', function()
         {
-            var name = $('#name-input').val();
+            var name  = $('#name-input').val();
 
             if(name.length > 3)
             {
