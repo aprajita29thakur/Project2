@@ -17,8 +17,9 @@
             <div class="input-wrapper">
               <h4>First Name</h4>
                 <input type="text" placeholder="Name" id="name-input" value="aman">
-                <!-- <h4>Last Name</h4> <input type="text" placeholder=" Enter Last Name" id="Last name-input"> -->
-              <button > Go </button>
+                 <h4>Last Name</h4>
+                 <input type="text" placeholder=" Enter Last Name" id="Last name-input"> <p>
+              <button > Submit </button></p>
             </div>
         </section>
 
@@ -35,14 +36,37 @@
         </section>
      -->
         <section class="content" >
-          <audio src="C:\Users\aHP\Desktop\Project2\02 - Yaariyan - Baarish.mp3" controls=" ">
-          </audio>
+          <!-- <audio src="C:\Users\aHP\Desktop\Project2\02 - Yaariyan - Baarish.mp3" controls=" ">
+          </audio> -->
+          <div class="song-list">
+                  <div class="list-headers">
+                    <div> Title </div>
+                    <div> Artist </div>
+                    <div> Album </div>
+                    <div> Duration </div>
+                  </div>
+
+                  <div class="current-song-wrapper">
+                      <img class="current-song-image">
+                      <div>
+                        <p class="current-song-name"></p>
+                        <p class="current-song-album"></p>
+                      </div>
+                    </div>
+
+                </div>
         </section>
 
           <footer>
               <div>
                   <div class="player-buttons">
-                      <i class="far fa-caret-circle-right"></i>
+                      <i class="fas fa-caret-right"></i>
+                      <div class="progress-wrapper">
+                    <span class="time-elapsed"> </span>
+                    <div class="player-progress">
+                        <div class="progress-filled"> </div>
+                    </div>
+                    <span class="song-duration"></span>
                   </div>
               </div>
           </footer>
@@ -107,6 +131,12 @@
             //   }
             // }
         });
+
+                $('.play-icon').on('click',function()
+                {
+                  var song = document.querySelector('audio');
+                  song.play();
+                });
         </script>
 </body>
 </html>
